@@ -17,10 +17,15 @@ from groq import Groq
 # ⚙️  CONFIGURATION
 # ──────────────────────────────────────────────────────────
 
-GROQ_API_KEY   = "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"
-GMAIL_ADDRESS  = "fouadsabbani48@gmail.com"
-GMAIL_APP_PASS = "efgj lnhd jxdb bzja"
-DESTINATAIRE   = "fouadsabbani48@gmail.com"
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+GROQ_API_KEY   = os.getenv("GROQ_API_KEY")
+GMAIL_ADDRESS  = os.getenv("GMAIL_ADDRESS")
+GMAIL_APP_PASS = os.getenv("GMAIL_APP_PASS")
+DESTINATAIRE   = os.getenv("DESTINATAIRE")
 
 SOURCES = [
     {
