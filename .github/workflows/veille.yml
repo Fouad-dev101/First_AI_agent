@@ -27,4 +27,4 @@ jobs:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASS: ${{ secrets.GMAIL_APP_PASS }}
           DESTINATAIRE: ${{ secrets.DESTINATAIRE }}
-        run: python agent_veille.py
+        run: python tech_veille/agent_veille.py
